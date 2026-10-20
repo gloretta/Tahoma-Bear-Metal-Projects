@@ -1,0 +1,13 @@
+public class Main {
+    public static void main(String[] args) {
+        Animal myAnimal = new Animal("Timmy", 3);
+        Dog myDog = new Dog("Mochi", 2, "Australian Shepherd");
+
+        myAnimal.printDetails();
+        myAnimal.makeSound();
+
+        myDog.printDetails();
+        myDog.makeSound();
+        myDog.fetch();
+    }
+}
