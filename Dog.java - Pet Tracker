@@ -1,0 +1,23 @@
+public class Dog extends Animal {
+    private String dogBreed = "";
+
+    public Dog(String name, int age, String dogBreed) {
+        super(name, age);
+        this.dogBreed = dogBreed;
+    }
+
+    @Override
+    void makeSound() {
+        System.out.println("Woof! Woof!");
+    }
+
+    @Override
+    void printDetails() {
+        super.printDetails();
+        System.out.println("Dog breed: " + dogBreed);
+    }
+
+    void fetch() {
+        System.out.println("The dog is running and fetching the ball!");
+    }
+}
